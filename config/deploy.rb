@@ -5,7 +5,7 @@ set :keep_releases, 3
 set :repository,  "git://github.com/elpabl0/POApp.git" 
 set :use_sudo, false
 set :scm, :git
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 set :default_stage, "staging"
  
 # source: http://tomcopeland.blogs.com/juniordeveloper/2008/05/mod_rails-and-c.html
