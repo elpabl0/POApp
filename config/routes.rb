@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.index '/', :controller => 'home', :action => 'index'
+    
   map.resources :items, :collection => {  :undelivered => :get }
 
   map.resources :suppliers
@@ -6,7 +9,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :purchases do
     map.resources :items
   end
-
 
   map.resources :customers
 
