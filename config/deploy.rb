@@ -25,12 +25,6 @@ namespace :deploy do
     send(run_method, "cd #{current_path} && rake db:migrate RAILS_ENV=#{stage} ")     
   end
   
-  desc "Link in the production database.yml" 
-  task :link_config_files do
-    run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
-    run "ln -nfs #{deploy_to}/#{shared_dir}/config/config.yml #{release_path}/config/config.yml"
-  end
-  
 end
 
 after "deploy:update_code", "deploy:link_config_files"
