@@ -1,0 +1,61 @@
+<h1>Editing purchase</h1>
+<% form_for(@purchase) do |f| %>
+	<%= f.submit 'Save', :class => 'awesome' %>
+<%= f.error_messages %>
+<section id="column-wrapper">
+	<section id="column-row">
+		<section id="column-1">
+			<section class="box">
+<table>
+<tr>
+	<td>
+	Ordered by:<%= collection_select("purchase", "user_id" , User.find(:all), :id, :name) %>  </p>
+</td>
+</tr>	<tr>
+		<td>
+    <%= f.label :purchase_date %><br />
+    <%= f.date_select(:purchase_date, :order => [:day, :month, :year]) %>
+</td>
+</tr>
+<tr>
+	<td>
+	Purchased from:<%= collection_select("purchase", "supplier_id" , Supplier.find(:all), :id, :name) %></p>
+</td>
+</tr>
+	<tr>
+		<td>
+	<%= f.label 'Delivered to customer address?' %><br />
+    <%= f.check_box :delivered_to_cust %>
+</td>
+</tr>
+</table>
+</section>
+</section>
+<section id="column-2">
+<section class="box">
+<h2> Items </h2>
+  <table><tr><th>
+<%= f.label :price %>
+</th>
+<th>
+	<%= f.label :description %>
+</th>
+<th>
+	Client:
+</th>
+<th>
+    <%= f.label "Recharged?" %>
+</th>
+<th>
+	<%= f.label "Delivered?" %>
+</th></tr></table>
+	<% f.fields_for :items do |builder| %>
+		<%= render 'item_fields', :f => builder  %>
+	<% end %>
+	<p class="add-link"><%= link_to_add_fields "Add Item", f, :items %></p>
+</section>
+</p>
+<% end %>
+</section>
+</section>
+<%= link_to 'Show', @purchase %>

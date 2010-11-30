@@ -1,0 +1,24 @@
+<div class="fields">
+<table>	<tr>
+		<td>
+    	£<%= f.text_field :price, :size => 8 %>
+		</td>
+		<td>
+    	<%= f.text_field :description %>
+		</td>
+		<td>
+		<%= f.collection_select(:customer_id , Customer.find(:all), :id, :name) %>  
+		</td>
+		<td>
+    	<%= f.check_box :recharge_status %>
+		Invoice #:<%= f.text_field :invoice_id, :size => 6 %>
+	</td>
+	<td>
+    	<p><%= f.check_box :delivery_status %></P>
+	        Date: <%= f.date_select(:delivery_date, :order => [:day, :month, :year], :include_blank => true, :default => nil, :use_month_numbers => true) %>
+	<%= link_to_remove_fields "Remove", f %>
+	</td>
+	</tr>
+	</table>
+		
+</div>

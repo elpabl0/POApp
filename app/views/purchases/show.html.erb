@@ -1,0 +1,75 @@
+<h1>Purchase: PEB<%= @purchase.id %></h1>
+<section id="column-wrapper">
+	<section id="column-row">
+		<section id="column-1">
+			<section class="box">
+				
+<p>
+  <b>User:</b>
+  <%=h @purchase.user.name %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%=h @purchase.purchase_date %>
+</p>
+
+<p>
+  <b>Supplier:</b>
+  <%=h @purchase.supplier.name %>
+</p>
+
+<p>
+  <b>Delivered to Customer Address?</b>
+  <% if @purchase.delivered_to_cust == false %>
+	No
+  <% else %>
+	Yes
+  <% end %>
+</p>
+</section>
+</section>
+<section id="column-2">
+<section class="box">
+<h2>Items</h2>
+<table><th>
+Price
+</th>
+<th>
+Description
+</th>
+<th>
+Client
+</th>
+<th>
+Recharged?
+</th>
+<th>
+Delivered?
+</th>
+<th>
+</th>
+<% for item in @purchase.items %>
+	<tr>
+    <td><%=h item.description %></td>
+    <td><%=h item.customer.name %></td>
+  	<td><% if item.delivery_date != nil %>
+		<%=h 'Delivered on:' + item.delivery_date.to_s %>
+		<% else %>
+		Not delivered
+		<% end %>
+	</td>
+	    <td><% if item.invoice_id != nil %>
+		<%= link_to('Invoice','https://pebbleit.freeagentcentral.com/invoices/' + item.invoice_id.to_s) %>
+		<% else %>
+		Not recharged
+		<% end %>
+	</td>
+	<td><%=h number_to_currency(item.price, :unit => '£') %></td>
+    <td><li class="remove-item"><%= link_to 'Delete', item, :confirm => 'Are you sure?', :method => :delete %></li></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Edit', edit_purchase_path(@purchase) %> |
+<%= link_to 'Back', purchases_path %>

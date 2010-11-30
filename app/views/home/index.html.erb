@@ -1,0 +1,9 @@
+<h1>Purchase Orders</h1>
+<p><%= link_to 'All Purchases', purchases_path %></p>
+<p><%= link_to 'All Items', items_path %></p>
+<p><%= link_to 'Customers', customers_path %></p>
+<p><%= link_to 'Suppliers', suppliers_path %></p>
+<p><%= link_to 'Users', users_path %></p>
+
+<p><%= link_to 'Undelivered Items', :controller => 'items', :action => 'index', :filter => 'undelivered' %></p>
+<p><%= link_to 'Delivered Items', :controller => 'items', :action => 'index', :filter => 'delivered' %></p>

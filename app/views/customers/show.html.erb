@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @customer.name %>
+</p>
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Customer</th>
+    <th>Delivery date</th>
+    <th>Invoice</th>
+  </tr>
+<nav>
+	<ul><% @clientparams = @customer.id %>
+		<li><%= link_to 'All Items', items_path %></li>
+		<li><%= link_to 'Undelivered', :controller => 'items', :action => 'index', :delivered => '0', :client => @clientparams, :recharged => @chargeparams %></li>
+		<li><%= link_to 'Delivered', :controller => 'items', :action => 'index', :delivered => '1', :client => @clientparams, :recharged => @chargeparams %></li>
+			<li><%= link_to 'Non-Recharged', :controller => 'items', :action => 'index', :recharged => '0', :client => @clientparams, :delivered => @delparams %></li>
+			<li><%= link_to 'Recharged', :controller => 'items', :action => 'index', :recharged => '1',:delivered => @delparams, :client => @clientparams %></li>	
+</ul>
+<% @customer.items.each do |item| %>
+  <tr>
+    <td><%=h item.price %></td>
+    <td><%=h item.description %></td>
+    <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>
+ <td><% if item.delivery_date != nil %>
+		<%=h 'Delivered on:' + item.delivery_date.to_s %>
+		<% else %>
+		Not delivered
+		<% end %>
+	</td>
+  	   <td><% if item.invoice_id != nil %>
+		<%= link_to('Invoice','https://pebbleit.freeagentcentral.com/invoices/' + item.invoice_id.to_s) %>
+		<% else %>
+		Not recharged
+		<% end %>
+	</td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

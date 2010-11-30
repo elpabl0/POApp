@@ -1,0 +1,19 @@
+<h2>Listing suppliers</h2>
+<p class="add-link"><%= link_to 'New supplier', new_supplier_path %></p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Website</th>
+  </tr>
+
+<% @suppliers.each do |supplier| %>
+  <tr>
+    <td><%= link_to supplier.name, supplier %></td>
+    <td><%=h supplier.website %></td>
+    <td><div class="edit-link"><%= link_to 'Edit', edit_supplier_path(supplier) %></div>
+    <div class="remove-item"><%= link_to 'Destroy', supplier, :confirm => 'Are you sure?', :method => :delete %></div></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

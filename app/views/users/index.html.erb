@@ -1,0 +1,21 @@
+<h2>Listing users</h2>
+<p class="add-link"><%= link_to 'New user', new_user_path %></p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.name, user %></td>
+    <td><%=h user.email %></td>
+	<td width='40' border='0'>
+		<div class="edit-link"><%= link_to 'Edit', edit_user_path(user) %></div>
+		<div class="remove-item"><%= link_to 'Delete', user, :confirm => 'Are you sure?', :method => :delete %></div></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

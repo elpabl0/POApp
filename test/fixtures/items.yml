@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  price: 9.99
+  description: MyString
+  customer_id: 1
+  recharge_status: false
+  delivery_status: false
+  delivery_date: 2010-11-24
+  invoice_id: 1
+
+two:
+  price: 9.99
+  description: MyString
+  customer_id: 1
+  recharge_status: false
+  delivery_status: false
+  delivery_date: 2010-11-24
+  invoice_id: 1

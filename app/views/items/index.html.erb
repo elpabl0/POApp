@@ -1,0 +1,66 @@
+<h2>Listing items</h2>
+</p>
+<section id="content">
+<nav>
+	<ul>
+		<li><%= link_to 'All Items', items_path %></li>
+		<li><%= link_to 'Undelivered', :controller => 'items', :action => 'index', :delivered => '0', :client => @clientparams, :recharged => @chargeparams %></li>
+		<li><%= link_to 'Delivered', :controller => 'items', :action => 'index', :delivered => '1', :client => @clientparams, :recharged => @chargeparams %></li>
+			<li><%= link_to 'Non-Recharged', :controller => 'items', :action => 'index', :recharged => '0', :client => @clientparams, :delivered => @delparams %></li>
+			<li><%= link_to 'Recharged', :controller => 'items', :action => 'index', :recharged => '1',:delivered => @delparams, :client => @clientparams %></li>	
+</ul>
+	</nav>
+	<p>
+		<% if @clientparams != nil %>
+		<%  @customer = Customer.find(@clientparams) %>
+		<%=  %>
+		<p class="remove-item"><%= link_to @customer.name, :controller => 'items', :action => 'index', :recharged => @chargeparams, :delivered => @delparams %>
+		</p>
+		<% else %>
+		<% end %>
+		<% if @delparams == '1' %>
+		<p class="remove-item"><%= link_to 'Delivered', :controller => 'items', :action => 'index', :client => @clientparams, :recharged => @chargeparams %>
+		</p>
+		<% elsif @delparams == '0'%>
+		<div class="remove-item"><%= link_to 'Undelivered', :controller => 'items', :action => 'index', :client => @clientparams, :recharged => @chargeparams %>
+		</p>
+		<% end %>
+		<% if @chargeparams == '1' %>
+		<p class="remove-item"><%= link_to 'Recharged', :controller => 'items', :action => 'index', :client => @clientparams, :delivered => @delparams %>
+		</p>
+		<% elsif @chargeparams == '0'%>
+		<p class="remove-item"><%= link_to 'Not Recharged', :controller => 'items', :action => 'index', :client => @clientparams, :delivered => @delparams %>
+		</p>
+		<% end %></p>
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Customer</th>
+    <th>Delivery date</th>
+    <th>Invoice</th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%=h item.price %></td>
+    <td><%=h item.description %></td>
+    <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>
+ <td><% if item.delivery_date != nil %>
+		<%=h 'Delivered on:' + item.delivery_date.to_s %>
+		<% else %>
+		Not delivered
+		<% end %>
+	</td>
+  	   <td><% if item.invoice_id != nil %>
+		<%= link_to('Invoice','https://pebbleit.freeagentcentral.com/invoices/' + item.invoice_id.to_s) %>
+		<% else %>
+		Not recharged
+		<% end %>
+	</td>
+  </tr>
+<% end %>
+</table>
+</section>
+</section>
+<br />

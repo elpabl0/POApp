@@ -1,0 +1,30 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+<div class="edit-link"><%= link_to 'Edit', edit_user_path(@user) %></div>
+
+<h2>Listing purchases</h2>
+<table>
+  <tr>
+	<th>PO#</th>
+    <th>User</th>
+    <th>Purchase date</th>
+    <th>Supplier</th>
+  </tr>
+
+<% @user.purchases.each do |purchase| %>
+  <tr>
+    <td><%= link_to 'PEB'+ purchase.id.to_s, purchase %></td>
+    <td><%=h purchase.user.name %></td>
+    <td><%=h purchase.purchase_date %></td>
+    <td><%=h purchase.supplier.name %></td>
+    <td><div class="edit-link"><%= link_to 'Edit', edit_purchase_path(purchase) %></div>
+    <div class="remove-item"><%= link_to 'Delete', purchase, :confirm => 'Are you sure?', :method => :delete %></div></td>
+  </tr>
+<% end %>
+</table>
