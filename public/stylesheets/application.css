@@ -699,7 +699,6 @@ a.cancel {
   background: transparent url("/images/icons/16x16/cancel.png") 0 0 no-repeat;
   display: block;
   float: left;
-  text-indent:-9999px;
 }
 
 /* line 433, sass/screen.sass */

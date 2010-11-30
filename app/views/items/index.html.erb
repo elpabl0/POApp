@@ -22,7 +22,7 @@
 		<p class="remove-item"><%= link_to 'Delivered', :controller => 'items', :action => 'index', :client => @clientparams, :recharged => @chargeparams %>
 		</p>
 		<% elsif @delparams == '0'%>
-		<div class="remove-item"><%= link_to 'Undelivered', :controller => 'items', :action => 'index', :client => @clientparams, :recharged => @chargeparams %>
+		<p class="remove-item"><%= link_to 'Undelivered', :controller => 'items', :action => 'index', :client => @clientparams, :recharged => @chargeparams %>
 		</p>
 		<% end %>
 		<% if @chargeparams == '1' %>
