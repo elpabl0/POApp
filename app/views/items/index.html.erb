@@ -34,6 +34,7 @@
 		<% end %></p>
 <table>
   <tr>
+	<th>PO</th>
     <th>Price</th>
     <th>Description</th>
     <th>Customer</th>
@@ -43,6 +44,7 @@
 
 <% @items.each do |item| %>
   <tr>
+	<td><%= link_to 'PEB' + item.purchase_id.to_s, item.purchase %>
     <td><%=h item.price %></td>
     <td><%=h item.description %></td>
     <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>

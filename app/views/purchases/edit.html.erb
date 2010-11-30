@@ -1,10 +1,11 @@
-<h1>Editing purchase</h1>
 <% form_for(@purchase) do |f| %>
-	<%= f.submit 'Save', :class => 'awesome' %>
-<%= f.error_messages %>
+<h1>Editing purchase</h1><%= f.submit 'Save', :class => 'awesome' %>
+
+
 <section id="column-wrapper">
 	<section id="column-row">
 		<section id="column-1">
+<%= f.error_messages %>
 			<section class="box">
 <table>
 <tr>
@@ -58,4 +59,3 @@
 <% end %>
 </section>
 </section>
-<%= link_to 'Show', @purchase %>

@@ -49231,3 +49231,1198 @@ ActionController::RoutingError (No route matches "/images/bg/table-header.png" w
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:12:00) [GET]
+  [4;36;1mPurchase Load (0.7ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.3ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 97ms (View: 90, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:12:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-11-30 15:13:26) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSupplier Load (1.0ms)[0m   [0;1mSELECT * FROM "suppliers" [0m
+  [4;35;1mCustomer Load (0.4ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (75.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (8.0ms)
+Completed in 310ms (View: 296, DB: 2) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:13:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:14:53) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:14:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-11-30 15:14:54) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" [0m
+  [4;36;1mCustomer Load (0.4ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (13.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (11.7ms)
+Completed in 171ms (View: 156, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:14:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:15:00) [GET]
+  [4;36;1mPurchase Load (0.6ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.2ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:15:02) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/purchases/27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-11-30 15:15:05) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/edit
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSupplier Load (0.3ms)[0m   [0;1mSELECT * FROM "suppliers" [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (73.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (8.2ms)
+Completed in 146ms (View: 137, DB: 2) | 200 OK [http://0.0.0.0/purchases/27/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:15:13) [GET]
+  [4;36;1mPurchase Load (0.9ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.3ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:15:15) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 107ms (View: 99, DB: 1) | 200 OK [http://0.0.0.0/purchases/27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-11-30 15:15:17) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/edit
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSupplier Load (0.3ms)[0m   [0;1mSELECT * FROM "suppliers" [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (12.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (8.0ms)
+Completed in 81ms (View: 73, DB: 2) | 200 OK [http://0.0.0.0/purchases/27/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:15:19) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.2ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 38ms (View: 29, DB: 1) | 200 OK [http://0.0.0.0/purchases/27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:15:48) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 104ms (View: 95, DB: 1) | 200 OK [http://0.0.0.0/purchases/27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:15:56) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.3ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://0.0.0.0/purchases/27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:15:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-11-30 15:16:04) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+Rendering template within layouts/application
+Rendering purchases/edit
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".purchase_id = 27) [0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (13.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered purchases/_item_fields (7.8ms)
+Completed in 85ms (View: 77, DB: 2) | 200 OK [http://0.0.0.0/purchases/27/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:16:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:16:07) [GET]
+  [4;35;1mPurchase Load (0.7ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 98ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:16:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:25:10) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:25:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:26:27) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:26:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:26:57) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #47 of app/views/items/index.html.erb:
+44: 
+45: <% @items.each do |item| %>
+46:   <tr>
+47: 	<td><% link_to 'PEB' + item.purchase_id %>
+48:     <td><%=h item.price %></td>
+49:     <td><%=h item.description %></td>
+50:     <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>
+
+    app/views/items/index.html.erb:47
+    app/views/items/index.html.erb:45:in `each'
+    app/views/items/index.html.erb:45
+    app/controllers/items_controller.rb:33:in `index'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:27:04) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:27:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:27:52) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+
+ActionView::TemplateError (purchase_url failed to generate from {:controller=>"purchases", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["purchases", :id] - are they all satisfied?) on line #47 of app/views/items/index.html.erb:
+44: 
+45: <% @items.each do |item| %>
+46:   <tr>
+47: 	<td><% link_to 'PEB' + item.purchase_id.to_s, purchase_path, :id => item.purchase_id %>
+48:     <td><%=h item.price %></td>
+49:     <td><%=h item.description %></td>
+50:     <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>
+
+    (eval):16:in `purchase_path'
+    app/views/items/index.html.erb:47
+    app/views/items/index.html.erb:45:in `each'
+    app/views/items/index.html.erb:45
+    app/controllers/items_controller.rb:33:in `index'
+
+Rendered rescues/_trace (114.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:28:50) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+
+ActionView::TemplateError (undefined local variable or method `purchase' for #<ActionView::Base:0x1043185f8>) on line #47 of app/views/items/index.html.erb:
+44: 
+45: <% @items.each do |item| %>
+46:   <tr>
+47: 	<td><% link_to 'PEB' + item.purchase_id.to_s, purchase %>
+48:     <td><%=h item.price %></td>
+49:     <td><%=h item.description %></td>
+50:     <td><%= link_to item.customer.name, :controller => 'items', :action => 'index', :client => item.customer_id, :delivered => @delparams, :recharged => @chargeparams %></td>
+
+    app/views/items/index.html.erb:47
+    app/views/items/index.html.erb:45:in `each'
+    app/views/items/index.html.erb:45
+    app/controllers/items_controller.rb:33:in `index'
+
+Rendered rescues/_trace (117.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:28:56) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.4ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 45ms (View: 34, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:28:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:20) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 101ms (View: 92, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-11-30 15:29:21) [GET]
+  Parameters: {"id"=>"28"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".purchase_id = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 47ms (View: 38, DB: 2) | 200 OK [http://0.0.0.0/purchases/28]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:23) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 31ms (View: 22, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:26) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 34ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:27) [GET]
+  Parameters: {"delivered"=>"0"}
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."delivery_status" = 'f') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/items?delivered=0]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:28) [GET]
+  Parameters: {"delivered"=>"1"}
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."delivery_status" = 't') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/items?delivered=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:29) [GET]
+  Parameters: {"delivered"=>"1", "client"=>"2"}
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."customer_id" = '2') [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."delivery_status" = 't') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 93ms (View: 19, DB: 2) | 200 OK [http://0.0.0.0/items?client=2&delivered=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:31) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 30ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:33) [GET]
+  Parameters: {"recharged"=>"0"}
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."recharge_status" = 'f') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 93ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/items?recharged=0]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:33) [GET]
+  Parameters: {"recharged"=>"1"}
+  [4;35;1mItem Load (1.3ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."recharge_status" = 't') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 30ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/items?recharged=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:34) [GET]
+  Parameters: {"recharged"=>"1", "delivered"=>"0"}
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."delivery_status" = 'f') [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."recharge_status" = 't') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 89ms (View: 78, DB: 2) | 200 OK [http://0.0.0.0/items?delivered=0&recharged=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:35) [GET]
+  [4;35;1mItem Load (1.1ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.2ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 33ms (View: 23, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:29:39) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.2ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 94ms (View: 85, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-11-30 15:29:40) [GET]
+  [4;35;1mCustomer Load (0.6ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/application
+Rendering customers/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/customers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SuppliersController#index (for 127.0.0.1 at 2010-11-30 15:29:41) [GET]
+  [4;36;1mSupplier Load (0.6ms)[0m   [0;1mSELECT * FROM "suppliers" [0m
+Rendering template within layouts/application
+Rendering suppliers/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/suppliers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-30 15:29:42) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SuppliersController#index (for 127.0.0.1 at 2010-11-30 15:29:43) [GET]
+  [4;36;1mSupplier Load (1.0ms)[0m   [0;1mSELECT * FROM "suppliers" [0m
+Rendering template within layouts/application
+Rendering suppliers/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/suppliers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:29:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:30:33) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.2ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:30:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:31:29) [GET]
+  [4;36;1mPurchase Load (0.9ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSupplier Load (0.2ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 30ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:31:39) [GET]
+  [4;35;1mPurchase Load (0.7ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:31:46) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 36ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-11-30 15:31:48) [GET]
+  [4;35;1mCustomer Load (0.6ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/application
+Rendering customers/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/customers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-30 15:31:49) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 83ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-11-30 15:31:51) [GET]
+  [4;35;1mCustomer Load (0.6ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/application
+Rendering customers/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/customers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-30 15:31:52) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-11-30 15:31:56) [GET]
+  [4;35;1mCustomer Load (0.6ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/application
+Rendering customers/index
+Completed in 102ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/customers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:31:57) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.5ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 39ms (View: 27, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:31:58) [GET]
+  [4;35;1mPurchase Load (0.7ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 34ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:31:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-30 15:32:01) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-11-30 15:32:03) [GET]
+  [4;35;1mPurchase Load (0.7ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mSupplier Load (0.3ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "suppliers" WHERE ("suppliers"."id" = 2) [0m
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:32:05) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.3ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.4ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 114ms (View: 26, DB: 2) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:32:06) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.4ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.5ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.6ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mPurchase Load (0.4ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 41ms (View: 29, DB: 3) | 200 OK [http://0.0.0.0/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:32:07) [GET]
+  Parameters: {"delivered"=>"0"}
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."delivery_status" = 'f') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mPurchase Load (0.7ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;36;1mCustomer Load (0.3ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mPurchase Load (0.4ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 119ms (View: 104, DB: 3) | 200 OK [http://0.0.0.0/items?delivered=0]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2010-11-30 15:32:08) [GET]
+  Parameters: {"recharged"=>"0", "delivered"=>"0"}
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."delivery_status" = 'f') [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."recharge_status" = 'f') [0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mPurchase Load (0.3ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 28) [0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mPurchase Load (0.4ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 27) [0m
+  [4;35;1mCustomer Load (0.3ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 36ms (View: 22, DB: 3) | 200 OK [http://0.0.0.0/items?delivered=0&recharged=0]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 15:32:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/bg/table-header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
